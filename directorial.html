@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Alex Vrahas: Directorial</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<!-- CSS only -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="backgroundopacity"> </div>
+	
+	<div id='fullNav'>
+		<div class="header"> 
+			<div class="gif"><img src="images/gifs/header_reel.gif" width="164" height="157" alt=""/></div>
+			<div class="name">
+				<p>ALEX</p>
+				<p>VRAHAS</p>
+			</div>
+			<div class="logo">editor + animator + films too</div>
+		</div>
+		<div class="nav">
+			<a href="index.html">HOME</a>
+			<a href="about.html" class="about">ABOUT</a>
+			<a href="contact.html" class="contact">CONTACT</a>
+			<a href="directorial.html" class="directorial">DIRECTORIAL</a>
+			<a href="editorial.html" class="editorial">EDITORIAL</a>
+			<a href="portfolio.html" class="personal">PORTFOLIO</a>
+		</div>
+	</div>
+	<div class="content">
+		<img id="title" class="centerImage" src="images/gifs/directorial.gif">
+		<iframe style="height: 50vh;" width="55%" class='centerImage' src="https://www.youtube.com/embed/t53k5_G21F8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="row" style="margin-top: 30px">
+			<div class="col-sm-4 hoverClass" id='musicVideos' onclick="setVideoLinks(this, 0);"><img width="274" height="40" class='centerImage' src='images/gifs/musicVideos.gif'><img class='centerImage' src="images/placeholder/obese-man-gun-1024x580.jpg" width="274" height="274" alt=""/></div>
+			<div class="col-sm-4 hoverClass" id='productVideos' onclick="setVideoLinks(this, 1);"><img  width="274" height="40" class='centerImage' src='images/gifs/productVideos.gif'><img class='centerImage' src="images/placeholder/N4A2962.jpg" width="274" height="274" alt=""/></div>
+			<div class="col-sm-4 hoverClass" id='personalProjects' onclick="setVideoLinks(this, 2);"><img  width="274" height="40" class='centerImage' src='images/gifs/personalProjects.gif'><img class='centerImage' src="images/placeholder/Food-addiction-1.jpg" width="274" height="274" alt=""/></div>
+		</div>
+		<img style = "margin-top: 200px" class='centerImage' src="images/gifs/AlterEgo-Banner.gif">
+	</div>
+	<script src="script.js"></script>
+	</body>
+</html>

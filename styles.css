@@ -1,0 +1,220 @@
+body {
+	background-color: #000000;
+	background-repeat: repeat;
+	font-family: none !important;
+	background-image: url(images/gifs/background_2.gif);
+	overflow-x: hidden;
+}
+body,td,th {
+	color: #FFFFFF;
+}
+
+.name p{
+	margin: 10px;
+	line-height: 22px;
+}
+
+#container{
+	width: 100%;
+}
+
+#fullNav{
+	height: 100%;
+	padding-left: 150px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-top: 150px;
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+}
+
+.row{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title{
+	height: 100px;
+    padding-bottom: 20px;
+}
+
+#titleHome{
+	width: 800px;
+    padding-bottom: 20px;
+}
+
+#textBox{
+	margin: 7%;
+    width: 70%;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width:1100px){
+	body {
+	  background-color: lightblue;
+	}
+
+	#title{
+		width: 60%;
+	}
+	
+	#titleHome{
+		width: 60%;
+	}
+
+	.header{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 10px !important;
+	}
+
+	#fullNav{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 10px !important;
+		display: inline-block !important;
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+		padding-top: 50px
+	}
+
+	.nav{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 10px !important;
+		width: 100% !important;
+	}
+	.content {
+		margin-left: 0px !important;
+	}
+
+	.nav a {
+		width: 16.5% !important
+	}
+}
+
+
+
+.backgroundopacity {
+	background-color: rgba(0,0,0,0.70);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.header {
+	/* [disabled]background-color: #D66B6D; */
+	width: 236px;
+	height: 274px;
+	
+}
+.header .gif {
+	width: 164px;
+	margin-left: 36px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-top: 8px;
+	position: absolute;
+	padding-left: 0px;
+}
+.header .name {
+	color: #B85CAC;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	line-height: 7px;
+	position: relative;
+	padding-top: 170px
+}
+.header .logo {
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	left: 175px;
+	top: 341px;
+}
+.content {
+	padding-top:100px;
+	margin-left: 400px;
+	height: 100%;
+}
+.content .directorial {
+	height: 274px;
+	width: 274px;
+	float: left;
+	margin-left: 27px;
+}
+.content .editorial {
+	width: 274px;
+	height: 274px;
+	float: left;
+	margin-left: 27px;
+}
+.content .personal {
+	width: 274px;
+	height: 274px;
+	float: left;
+	margin-left: 27px;
+}
+.nav {
+	width: 236px;
+	margin-top: 20px;
+}
+
+.centerImage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav a{
+	height: 42px;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	line-height: 34px;
+	margin-top: 8px;
+	color: white;
+    display: block;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.nav a:hover{
+	color: #B85CAC;
+}
+
+.hoverClass{
+	cursor: pointer;
+}
+
+.hoverClass:hover {
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+	animation: shake 0.5s;
+
+	/* When the animation is finished, start again */
+	animation-iteration-count: infinite;
+}
+  
+@keyframes shake {
+0% { transform: translate(1px, 1px) rotate(0deg); }
+10% { transform: translate(-1px, -2px) rotate(-1deg); }
+20% { transform: translate(-3px, 0px) rotate(1deg); }
+30% { transform: translate(3px, 2px) rotate(0deg); }
+40% { transform: translate(1px, -1px) rotate(1deg); }
+50% { transform: translate(-1px, 2px) rotate(-1deg); }
+60% { transform: translate(-3px, 1px) rotate(0deg); }
+70% { transform: translate(3px, 1px) rotate(-1deg); }
+80% { transform: translate(-1px, -1px) rotate(1deg); }
+90% { transform: translate(1px, 2px) rotate(0deg); }
+100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
