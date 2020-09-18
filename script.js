@@ -1,5 +1,5 @@
 
-const linkArray = ['musicvideos.html', 'productvideos.html', 'personalprojects.html'];
+const linkArray = ['musicvideos.html', 'productvideos.html', 'narrative.html'];
 
 function setVideoLinks(content, num){
     content.children[1].src = "images/gifs/explosion.gif"
