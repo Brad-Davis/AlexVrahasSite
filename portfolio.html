@@ -6,6 +6,7 @@
 	
 	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel='shortcut icon' type='image/x-icon' href='images/header_reel.ico'/>
 	<!-- Latest compiled and minified CSS -->
 	<!-- CSS only -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -29,7 +30,7 @@
 				<p>VRAHAS</p>
 			</div>
 			<div class="logo">editor + animator + films too</div>
-		</div>
+		</div> 
 		<div class="nav">
 			<a href="index.html">HOME</a>
 			<a href="about.html" class="about">ABOUT</a>
@@ -41,14 +42,23 @@
 	</div>
 	<div class="content">
 		<img id="title" class="centerImage" src="images/gifs/portfolio.gif">
-		<div class="row">
-			<div class="col-sm-4"><img class='centerImage' src="images/placeholder/obese-man-gun-1024x580.jpg" width="274" height="274" alt=""/></div>
-			<div class="col-sm-4"><img class='centerImage' src="images/placeholder/N4A2962.jpg" width="274" height="274" alt=""/></div>
-			<div class="col-sm-4"><img class='centerImage' src="images/placeholder/Food-addiction-1.jpg" width="274" height="274" alt=""/></div>
+		<div style="margin-top: 60px;" class="row">
+			<div class="col-sm-4 hoverClass" onclick="setHomeLinks(this, 'directorial.html')">
+				<img class='centerImage' src="images/placeholder/obese-man-gun-1024x580.jpg" width="274" height="274" alt=""/>
+				<img width="274" height="40" class='centerImage' src='images/gifs/storyboards.gif'>
+			</div>
+			<div class="col-sm-4 hoverClass" onclick="setHomeLinks(this, 'editorial.html')">
+				<img class='centerImage' src="images/placeholder/N4A2962.jpg" width="274" height="274" alt=""/>
+				<img width="274" height="40" class='centerImage' src='images/gifs/characterDesign.gif'>
+			</div>
+			<div class="col-sm-4 hoverClass" onclick="setHomeLinks(this, 'portfolio.html')">
+				<img class='centerImage' src="images/placeholder/Food-addiction-1.jpg" width="274" height="274" alt=""/>
+				<img width="274" height="40" class='centerImage' src='images/gifs/fabrication.gif'>
+			</div>
 		</div>
-		<img style = "margin-top: 200px" class='centerImage' src="images/gifs/AlterEgo-Banner.gif">
+		<img style = "margin-top: 200px; width: 60%;" class='centerImage' src="images/gifs/AlterEgo-Banner.gif">
 	</div>
-	
+	<script src="script.js"></script>
 	</body>
 	
 </html>
