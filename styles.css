@@ -9,6 +9,14 @@ body,td,th {
 	color: #FFFFFF;
 }
 
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
 .name p{
 	margin: 10px;
 	line-height: 22px;
@@ -20,10 +28,10 @@ body,td,th {
 
 #fullNav{
 	height: 100%;
-	padding-left: 150px;
+	padding-left: 7%;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	padding-top: 150px;
+	padding-top: 7%;
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
@@ -50,6 +58,30 @@ body,td,th {
     width: 70%;
     margin-left: auto;
 	margin-right: auto;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+	height: 100%;
+	left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+@media only screen and (max-width:600px){
+	#fullNav .nav a {
+		width: 100% !important;
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width:1100px){
@@ -101,14 +133,13 @@ body,td,th {
 
 .backgroundopacity {
 	background-color: rgba(0,0,0,0.70);
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
+	position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
 }
 .header {
 	/* [disabled]background-color: #D66B6D; */
@@ -143,10 +174,16 @@ body,td,th {
 	top: 341px;
 }
 .content {
-	padding-top:100px;
+	padding-top: 5vh;
 	margin-left: 400px;
-	height: 100%;
+	height: 90vh;
 }
+
+.alterEgo{
+	padding-top: 7%;
+	width:60%;
+}
+
 .content .directorial {
 	height: 274px;
 	width: 274px;
