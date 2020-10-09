@@ -24,6 +24,13 @@
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="styles.css">
+
+	<!-- jQuery 1.8 or later, 33 KB -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Fotorama from CDNJS, 19 KB -->
+	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <body>
@@ -49,36 +56,35 @@
 	</div>
 	<div class="content">
 		<img class='centerImage' id='title' src="images/gifs/storyboards.gif">
-		<div class="videoWrapper">
-			<iframe class='centerImage' src="https://www.youtube.com/embed/t53k5_G21F8" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-		</div>
 		<p class=videoDescription>
-			Title: <br>
-			Info: <br>
-			Description: <br>
+			<b>Short excert from <i>Drug Back To Muscogee</i></b> <br>
+			<i>Original script</i> <br>
+			A diligent captain is sent a remote border outpost to maintain order during war, but must instead battle the unchanging, all-encompassing boredom of the wilderness.<br>
 		</p>
-		<div class="videoWrapper">
-			<iframe class='centerImage' src="https://www.youtube.com/embed/t53k5_G21F8" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+		<div class="fotorama"
+			data-nav="thumbs">
+			<img src="images/art/storyboards/DrugBack_1.jpg">
+			<img src="images/art/storyboards/DrugBack_2.jpg">
+			<img src="images/art/storyboards/DrugBack_3.jpg">
+			<img src="images/art/storyboards/DrugBack_4.jpg">
+			<img src="images/art/storyboards/DrugBack_5.jpg">
 		</div>
+		<br>
+		<br>
+		<br>
 		<p class=videoDescription>
-			Title: <br>
-			Info: <br>
-			Description: <br>
+			<b>Oh, Muses!</b> <br>
+			<i>Animation</i> <br>
+			This little dope can't even cook PASTA, so he accidentally summons some extradimensional demon for help. Fuckin' dinkledorf.<br>
 		</p>
-		<div class="videoWrapper">
-			<iframe class='centerImage' src="https://www.youtube.com/embed/t53k5_G21F8" frameborder="0"
-				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
+		<div class="fotorama"
+			data-nav="thumbs">
+			<img src="images/art/storyboards/OhMuses_1.jpg">
+			<img src="images/art/storyboards/OhMuses_2.jpg">
+			<img src="images/art/storyboards/OhMuses_3.jpg">
+			<img src="images/art/storyboards/OhMuses_4.jpg">
+			<img src="images/art/storyboards/OhMuses_5.jpg">
 		</div>
-		<p class=videoDescription>
-			Title: <br>
-			Info: <br>
-			Description: <br>
-		</p>
 	</div>
 	<script src="script.js"></script>
 </body>
