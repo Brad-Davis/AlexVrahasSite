@@ -5,79 +5,87 @@ body {
 	background-image: url(images/gifs/background_2.gif);
 	overflow-x: hidden;
 }
-body,td,th {
+
+body, td, th {
 	color: #FFFFFF;
 }
 
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-}
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
+html {
+	min-height: 100%;
+	/* make sure it is at least as tall as the viewport */
+	position: relative;
 }
 
-.name p{
+body {
+	height: 100%;
+	/* force the BODY element to match the height of the HTML element */
+}
+
+.name p {
 	margin: 10px;
 	line-height: 22px;
 }
 
-#container{
+#container {
 	width: 100%;
 }
 
-#fullNav{
+#fullNav {
 	height: 100%;
 	padding-left: 7%;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	padding-top: 7%;
-	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-	z-index: 1; /* Stay on top */
-	top: 0; /* Stay at the top */
+	position: fixed;
+	/* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1;
+	/* Stay on top */
+	top: 0;
+	/* Stay at the top */
 	left: 0;
 }
 
-.row{
+.row {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#title{
+#title {
 	height: 100px;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
-#titleHome{
+#titleHome {
 	width: 800px;
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
-#textBox{
+#textBox {
 	margin: 7%;
-    width: 70%;
-    margin-left: auto;
+	width: 70%;
+	margin-left: auto;
 	margin-right: auto;
 }
 
 .videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    height: 0;
+	position: relative;
+	padding-bottom: 56.25%;
+	/* 16:9 */
+	padding-top: 25px;
+	height: 0;
 }
+
 .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80%;
 	height: 100%;
 	left: 50%;
-    transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
 }
 
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
 	#fullNav .nav a {
 		width: 100% !important;
 		text-align: center;
@@ -88,26 +96,27 @@ body{
 	}
 }
 
-@media only screen and (max-width:1100px){
+.fotorama__wrap {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width:1100px) {
 	body {
-	  background-color: lightblue;
+		background-color: lightblue;
 	}
-
-	#title{
+	#title {
 		width: 60%;
 	}
-	
-	#titleHome{
+	#titleHome {
 		width: 60%;
 	}
-
-	.header{
+	.header {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		margin-top: 10px !important;
 	}
-
-	#fullNav{
+	#fullNav {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		margin-top: 10px !important;
@@ -117,8 +126,7 @@ body{
 		padding-left: 0;
 		padding-top: 50px
 	}
-
-	.nav{
+	.nav {
 		margin-left: auto !important;
 		margin-right: auto !important;
 		margin-top: 10px !important;
@@ -127,30 +135,28 @@ body{
 	.content {
 		margin-left: 0px !important;
 	}
-
 	.nav a {
 		width: 16.5% !important
 	}
 }
 
-
-
 .backgroundopacity {
-	background-color: rgba(0,0,0,0.70);
-	position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    overflow:hidden;
-    z-index:-1;
+	background-color: rgba(0, 0, 0, 0.70);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	z-index: -1;
 }
+
 .header {
 	/* [disabled]background-color: #D66B6D; */
 	width: 236px;
 	height: 274px;
-	
 }
+
 .header .gif {
 	width: 164px;
 	margin-left: 36px;
@@ -160,6 +166,7 @@ body{
 	position: absolute;
 	padding-left: 0px;
 }
+
 .header .name {
 	color: #B85CAC;
 	font-weight: bold;
@@ -169,6 +176,7 @@ body{
 	position: relative;
 	padding-top: 170px
 }
+
 .header .logo {
 	text-align: center;
 	font-weight: bold;
@@ -177,15 +185,16 @@ body{
 	left: 175px;
 	top: 341px;
 }
+
 .content {
 	padding-top: 5vh;
 	margin-left: 400px;
 	height: 90vh;
 }
 
-.alterEgo{
+.alterEgo {
 	padding-top: 7%;
-	width:60%;
+	width: 60%;
 }
 
 .content .directorial {
@@ -194,30 +203,33 @@ body{
 	float: left;
 	margin-left: 27px;
 }
+
 .content .editorial {
 	width: 274px;
 	height: 274px;
 	float: left;
 	margin-left: 27px;
 }
+
 .content .personal {
 	width: 274px;
 	height: 274px;
 	float: left;
 	margin-left: 27px;
 }
+
 .nav {
 	width: 236px;
 	margin-top: 20px;
 }
 
-.centerImage{
+.centerImage {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.nav a{
+.nav a {
 	height: 42px;
 	width: 100%;
 	font-weight: bold;
@@ -225,38 +237,38 @@ body{
 	line-height: 34px;
 	margin-top: 8px;
 	color: white;
-    display: block;
+	display: block;
 	text-decoration: none;
 	cursor: pointer;
 }
 
-.nav a:hover{
+.nav a:hover {
 	color: #B85CAC;
 }
 
-.hoverClass{
+.hoverClass {
 	cursor: pointer;
 }
 
-#angryAlex{
+#angryAlex {
 	z-index: -3;
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	top:0;
-	left:0;
+	top: 0;
+	left: 0;
 	opacity: 0;
 }
 
-.videoDescription{
+.videoDescription {
 	font-size: 2em;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
 }
 
-h3{
+h3 {
 	text-align: center;
 	font-size: 2.75em;
 	margin-top: 30px;
@@ -265,14 +277,12 @@ h3{
 .hoverClass:hover {
 	/* Start the shake animation and make the animation last for 0.5 seconds */
 	animation: shake 0.5s;
-
 	/* When the animation is finished, start again */
 	animation-iteration-count: infinite;
 }
-  
-.freakOut{
-	animation: shake 0.5s;
 
+.freakOut {
+	animation: shake 0.5s;
 	/* When the animation is finished, start again */
 	animation-iteration-count: infinite;
 }
@@ -295,18 +305,38 @@ h3{
 	width: 100%;
 }
 
-
-
 @keyframes shake {
-0% { transform: translate(1px, 1px) rotate(0deg); }
-10% { transform: translate(-1px, -2px) rotate(-1deg); }
-20% { transform: translate(-3px, 0px) rotate(1deg); }
-30% { transform: translate(3px, 2px) rotate(0deg); }
-40% { transform: translate(1px, -1px) rotate(1deg); }
-50% { transform: translate(-1px, 2px) rotate(-1deg); }
-60% { transform: translate(-3px, 1px) rotate(0deg); }
-70% { transform: translate(3px, 1px) rotate(-1deg); }
-80% { transform: translate(-1px, -1px) rotate(1deg); }
-90% { transform: translate(1px, 2px) rotate(0deg); }
-100% { transform: translate(1px, -2px) rotate(-1deg); }
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
 }
