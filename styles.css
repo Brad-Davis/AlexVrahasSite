@@ -100,6 +100,7 @@ body {
 .fotorama__wrap {
 	margin-left: auto;
 	margin-right: auto;
+	width: 60% !important;
 }
 
 @media only screen and (max-width:1100px) {
