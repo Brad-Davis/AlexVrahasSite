@@ -1,10 +1,4 @@
-body {
-	background-color: #000000;
-	background-repeat: repeat;
-	font-family: none !important;
-	background-image: url(images/gifs/background_2.gif);
-	overflow-x: hidden;
-}
+body {}
 
 body, td, th {
 	color: #FFFFFF;
@@ -12,12 +6,20 @@ body, td, th {
 
 html {
 	min-height: 100%;
+	overflow-x: hidden;
 	/* make sure it is at least as tall as the viewport */
-	position: relative;
 }
 
 body {
-	height: 100%;
+	background-color: #000000;
+	background-repeat: repeat;
+	position: relative;
+	font-family: none !important;
+	background-image: url(images/gifs/background_2.gif);
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	/* force the BODY element to match the height of the HTML element */
 }
 
@@ -139,6 +141,9 @@ body {
 	}
 	.nav a {
 		width: 16.5% !important
+	}
+	.videoDescription {
+		font-size: 1em !important;
 	}
 }
 
