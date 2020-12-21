@@ -16,6 +16,7 @@ body {
 	position: relative;
 	font-family: none !important;
 	background-image: url(images/gifs/background_2.gif);
+	background-attachment: fixed;
 	width: 100%;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -86,74 +87,6 @@ body {
 	height: 100%;
 	left: 50%;
 	transform: translate(-50%, 0);
-}
-
-@media only screen and (max-width:700px) {
-	#fullNav .nav a {
-		width: 100% !important;
-		text-align: center;
-	}
-	.column {
-		flex: 100%;
-		max-width: 100%;
-	}
-}
-
-.fotorama__wrap {
-	margin-left: auto;
-	margin-right: auto;
-	width: 80% !important;
-}
-
-.fotorama img {
-	width: 100%;
-}
-
-.fotorama, .addToCart {
-	position: relative;
-	z-index: 2;
-}
-
-@media only screen and (max-width:1100px) {
-	body {
-		background-color: lightblue;
-	}
-	#title {
-		width: 60%;
-	}
-	#titleHome {
-		width: 60%;
-	}
-	.header {
-		margin-left: auto !important;
-		margin-right: auto !important;
-		margin-top: 10px !important;
-	}
-	#fullNav {
-		margin-left: auto !important;
-		margin-right: auto !important;
-		margin-top: 10px !important;
-		display: inline-block !important;
-		position: relative;
-		width: 100%;
-		padding-left: 0;
-		padding-top: 50px
-	}
-	.nav {
-		margin-left: auto !important;
-		margin-right: auto !important;
-		margin-top: 10px !important;
-		width: 100% !important;
-	}
-	.content {
-		margin-left: 0px !important;
-	}
-	.nav a {
-		width: 16.5% !important
-	}
-	.videoDescription {
-		font-size: 1em !important;
-	}
 }
 
 .backgroundopacity {
@@ -369,4 +302,82 @@ h3 {
 	100% {
 		transform: translate(1px, -2px) rotate(-1deg);
 	}
+}
+
+@media only screen and (max-width:1100px) {
+	.alterEgo {
+		width: 100%;
+	}
+	body {
+		background-color: lightblue;
+	}
+	#title {
+		width: 70%;
+		min-height: 60px;
+	}
+	#titleHome {
+		width: 60%;
+	}
+	.header {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 10px !important;
+	}
+	#fullNav {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 10px !important;
+		display: inline-block !important;
+		position: relative;
+		width: 100%;
+		padding-left: 0;
+		padding-top: 50px
+	}
+	.nav {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		margin-top: 10px !important;
+		width: 100% !important;
+	}
+	.content {
+		margin-left: 0px !important;
+	}
+	.nav a {
+		width: 16.5% !important
+	}
+	.videoDescription {
+		font-size: 1em !important;
+	}
+	.row .hoverClass {
+		margin-top: 30px;
+	}
+	.byeSkelly {
+		display: none;
+	}
+}
+
+@media only screen and (max-width:700px) {
+	#fullNav .nav a {
+		width: 100% !important;
+		text-align: center;
+	}
+	.column {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.fotorama__wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80% !important;
+}
+
+.fotorama img {
+	width: 100%;
+}
+
+.fotorama, .addToCart {
+	position: relative;
+	z-index: 2;
 }
