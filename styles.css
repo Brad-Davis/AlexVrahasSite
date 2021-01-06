@@ -145,6 +145,7 @@ body {
 	padding-top: 5vh;
 	margin-left: 400px;
 	height: 90vh;
+	width: 70%;
 }
 
 .alterEgo {
@@ -344,6 +345,7 @@ h3 {
 	}
 	.content {
 		margin-left: 0px !important;
+		width: 100%;
 	}
 	.nav a {
 		width: 16.5% !important
